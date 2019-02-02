@@ -84,7 +84,7 @@ stdenv.mkDerivation rec {
       })
       (fetchpatch {
         name = "qt4-gcc6.patch";
-        url = "https://git.archlinux.org/svntogit/packages.git/plain/trunk/qt4-gcc6.patch?h=packages/qt4&id=ca773a144f5abb244ac4f2749eeee9333cac001f";
+        url = "https://aur.archlinux.org/cgit/aur.git/plain/qt4-gcc6.patch?h=qt4";
         sha256 = "07lrva7bjh6i40p7b3ml26a2jlznri8bh7y7iyx5zmvb1gfxmj34";
       })
     ]
