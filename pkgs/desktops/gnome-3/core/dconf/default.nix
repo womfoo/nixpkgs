@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     "-Dgtk_doc=true"
   ];
 
-  doCheck = true;
+  doCheck = (!stdenv.hostPlatform.isAarch32 && !stdenv.hostPlatform.isAarch64);
 
   passthru = {
     updateScript = gnome3.updateScript {
