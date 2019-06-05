@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
   '';
 
   # https://bugzilla.gnome.org/show_bug.cgi?id=728129#c15
-  doCheck = stdenv.hostPlatform.system != "i686-linux"; # not sure about cross-compiling
+  doCheck = (!stdenv.hostPlatform.isi686 && !stdenv.hostPlatform.isAarch32); # not sure about cross-compiling
 
   meta = with stdenv.lib; {
     description = "The Oil Runtime Compiler";
