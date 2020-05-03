@@ -5628,6 +5628,8 @@ in
 
   papertrail = callPackage ../tools/text/papertrail { };
 
+  papertty = callPackage ../tools/graphics/papertty { };
+
   par2cmdline = callPackage ../tools/networking/par2cmdline { };
 
   parallel = callPackage ../tools/misc/parallel { };
