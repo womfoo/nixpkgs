@@ -5367,6 +5367,8 @@ in {
 
   ropper = callPackage ../development/python-modules/ropper { };
 
+  RPi_GPIO = callPackage ../development/python-modules/rpi_gpio {};
+
   rpkg = callPackage ../development/python-modules/rpkg {};
 
   rply = callPackage ../development/python-modules/rply {};
